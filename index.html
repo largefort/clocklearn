@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock Learning Game with Virtual Guide and Time Zones</title>
+    <title>Clock Learning Game with Virtual Guide, Time Zones, and Result Calculation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,6 +29,7 @@
         <div class="controls">
             <button id="pencilButton">Pencil</button>
             <button id="clearButton">Clear</button>
+            <button id="checkButton">Check Time</button> <!-- New button to check the drawn time -->
         </div>
 
         <!-- Virtual Guide -->
@@ -36,8 +37,10 @@
             <h2>Teacher's Assistant</h2>
             <p id="guideMessage">Let's draw the clock hands to show the correct time! Start with the hour hand.</p>
             <p id="timerDisplay">Time Spent: 0 seconds</p>
+            <p id="resultMessage"></p> <!-- New area to display the result -->
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
