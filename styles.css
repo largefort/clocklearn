@@ -37,3 +37,13 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* Add styles for time zone selector and clock display */
+label, #timezoneSelector, #currentTimeDisplay {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
