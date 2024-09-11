@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock Learning Game with Virtual Guide</title>
+    <title>Clock Learning Game with Virtual Guide and Time Zones</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Learn the Clock!</h1>
         <p>Draw the hour and minute hands to show the time!</p>
+        
+        <!-- Time Zone Selector -->
+        <label for="timezoneSelector">Select Time Zone:</label>
+        <select id="timezoneSelector">
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">New York (EST)</option>
+            <option value="Europe/London">London (GMT)</option>
+            <option value="Asia/Tokyo">Tokyo (JST)</option>
+            <option value="Australia/Sydney">Sydney (AEST)</option>
+            <!-- Add more time zones as needed -->
+        </select>
+
+        <!-- Real-Time Clock Display -->
+        <p id="currentTimeDisplay">Current Time: --:--</p>
+
         <canvas id="clockCanvas" width="400" height="400"></canvas>
         <div class="controls">
             <button id="pencilButton">Pencil</button>
             <button id="clearButton">Clear</button>
         </div>
+
         <!-- Virtual Guide -->
         <div id="guide" class="guide">
             <h2>Teacher's Assistant</h2>
             <p id="guideMessage">Let's draw the clock hands to show the correct time! Start with the hour hand.</p>
+            <p id="timerDisplay">Time Spent: 0 seconds</p>
         </div>
     </div>
     <script src="script.js"></script>
